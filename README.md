@@ -106,13 +106,13 @@ You should see `playwright` listed. If it's missing, re-run the install command 
 
 ### **Step 4: Install the Skills**
 
-Clone this repo into your project:
+Clone this repo:
 
 ```bash
 git clone https://github.com/AKCodez/higgsfield-claude-skills
 ```
 
-Copy all skills into your project's `.claude/skills/` directory:
+Copy all 19 skills into your project's `.claude/skills/` directory:
 
 ```bash
 mkdir -p .claude/skills
