@@ -1,11 +1,22 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin.json",
   "name": "higgsfield-automation",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generate images and videos on Higgsfield AI end-to-end through the official Higgsfield API. Bundles the higgsfield-mcp server and ships skills for image generation, Seedance 2.0 video generation, and a full UGC ad pipeline. Requires HF_API_KEY and HF_SECRET (from cloud.higgsfield.ai/api-keys) and consumes Higgsfield credits.",
-  "author": { "name": "Raul Cajias", "url": "https://github.com/cajias" },
+  "author": {
+    "name": "Raul Cajias",
+    "url": "https://github.com/cajias"
+  },
   "homepage": "https://github.com/cajias/higgsfield-claude-skills",
   "repository": "https://github.com/cajias/higgsfield-claude-skills",
   "license": "MIT",
-  "keywords": ["higgsfield", "mcp", "automation", "video-generation", "image-generation", "ugc", "seedance"]
+  "keywords": [
+    "higgsfield",
+    "mcp",
+    "automation",
+    "video-generation",
+    "image-generation",
+    "ugc",
+    "seedance"
+  ]
 }

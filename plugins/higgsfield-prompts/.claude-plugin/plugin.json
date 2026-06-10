@@ -1,11 +1,23 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin.json",
   "name": "higgsfield-prompts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "15 Seedance 2.0 prompt-engineering skills for Higgsfield AI video generation — cinematic, 3D/CGI, cartoon, comic-to-video, fight scenes, motion-design ad, e-commerce ad, anime, product 360, music video, social hook, brand story, fashion lookbook, food & beverage, and real estate. Each produces production-grade, paste-ready prompts with strong 2-second hooks. No API key required.",
-  "author": { "name": "Raul Cajias", "url": "https://github.com/cajias" },
+  "author": {
+    "name": "Raul Cajias",
+    "url": "https://github.com/cajias"
+  },
   "homepage": "https://github.com/cajias/higgsfield-claude-skills",
   "repository": "https://github.com/cajias/higgsfield-claude-skills",
   "license": "MIT",
-  "keywords": ["higgsfield", "seedance", "video", "prompt-engineering", "ugc", "cinematic", "anime", "ecommerce"]
+  "keywords": [
+    "higgsfield",
+    "seedance",
+    "video",
+    "prompt-engineering",
+    "ugc",
+    "cinematic",
+    "anime",
+    "ecommerce"
+  ]
 }
