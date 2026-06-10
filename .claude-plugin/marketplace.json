@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "higgsfield",
+  "owner": {
+    "name": "Raul Cajias",
+    "url": "https://github.com/cajias"
+  },
+  "metadata": {
+    "description": "Higgsfield AI video & image generation skills for Claude Code — 15 Seedance prompt-engineering styles plus an automation pack that drives the official Higgsfield API.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "higgsfield-prompts",
+      "source": "./plugins/higgsfield-prompts",
+      "description": "15 Seedance 2.0 prompt-engineering skills (cinematic, 3D/CGI, anime, e-commerce ad, real estate, and more). Each turns Claude into a specialist prompt engineer that produces production-grade, paste-ready video prompts. No API key required.",
+      "version": "1.0.0",
+      "author": { "name": "Raul Cajias", "url": "https://github.com/cajias" },
+      "category": "content",
+      "tags": ["higgsfield", "seedance", "video", "prompt-engineering", "ugc"]
+    },
+    {
+      "name": "higgsfield-automation",
+      "source": "./plugins/higgsfield-automation",
+      "description": "Generate images and videos on Higgsfield end-to-end via the official Higgsfield API (higgsfield-mcp). Includes image generation, Seedance video generation, and a full UGC ad pipeline. Requires HF_API_KEY and HF_SECRET and consumes Higgsfield credits.",
+      "version": "1.0.0",
+      "author": { "name": "Raul Cajias", "url": "https://github.com/cajias" },
+      "category": "automation",
+      "tags": ["higgsfield", "mcp", "automation", "video-generation", "image-generation", "ugc"]
+    }
+  ]
+}
