@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-3d-cgi",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a robot mascot for my startup. Make a short video of it waving hello that looks like a Pixar movie — fully rendered, glossy plastic body, soft studio lighting.",
+      "expected_output": "A production-grade Seedance 2.0 video prompt in the 3D CGI / rendered style: opens with a 2-second attention hook, then specifies render-engine and material language (e.g. physically based rendering, subsurface scattering, glossy plastic shaders), a soft studio three-point lighting setup, explicit camera move, and a beat-by-beat timeline. Roughly 15-25 lines, ready to paste into Higgsfield.",
+      "files": [],
+      "expectations": [
+        "Output is a single Seedance 2.0 video prompt written in the 3D CGI / rendered aesthetic (Pixar-style, physically based rendering), not a 2D cartoon or live-action film treatment.",
+        "Prompt opens with an explicit ~2-second hook describing the very first frames before the wave begins.",
+        "Prompt includes distinct camera, lighting (soft studio / three-point), and material/shader sections (e.g. glossy plastic, subsurface scattering).",
+        "Prompt contains a beat-by-beat timeline and is roughly 15-25 lines long."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a video prompt for a photorealistic 3D render of a sci-fi spaceship cockpit at warp speed — Unreal Engine 5 look, ray-traced reflections on the glass, volumetric light streaks. Camera pushes in toward the pilot's seat.",
+      "expected_output": "A polished Seedance 2.0 prompt using explicit real-time render-engine terminology (Unreal Engine 5, ray tracing, volumetric lighting, reflections), a 2-second opening hook, a dolly/push-in camera move toward the seat, lighting and material breakdowns, and a timed sequence of beats. Around 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Prompt explicitly uses real-time / render-engine terminology such as Unreal Engine 5, ray-traced reflections, and volumetric lighting.",
+        "Prompt begins with a ~2-second hook establishing the cockpit-at-warp moment before the push-in.",
+        "Prompt specifies the camera push-in / dolly toward the pilot's seat as a dedicated camera direction.",
+        "Prompt is structured with separate camera, lighting, and timeline/beat sections totaling roughly 15-25 lines."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Take my coffee mug photo and turn it into a slow rotating CGI hero shot — octane render quality, ceramic with realistic subsurface glow, sitting on a reflective black surface with dramatic rim light.",
+      "expected_output": "A Seedance 2.0 CGI prompt that renders the mug as a photoreal 3D object (octane render look, ceramic subsurface scattering, reflective floor, rim lighting) rather than a literal product turntable spec — leading with a 2-second hook, then camera, lighting and material sections plus a timed rotation timeline, about 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Prompt frames the mug as a photorealistic 3D / CGI render using engine and material language (octane render, subsurface scattering, ceramic shader, reflective surface), distinguishing it from a plain product-360 turntable description.",
+        "Prompt opens with a ~2-second hook before the rotation begins.",
+        "Prompt includes dedicated lighting (rim / dramatic) and material/shader detail alongside the camera move.",
+        "Prompt provides a beat-by-beat timeline for the slow rotation and runs roughly 15-25 lines."
+      ]
+    }
+  ]
+}

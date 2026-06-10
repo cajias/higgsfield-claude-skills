@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-fashion-lookbook",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm launching my streetwear brand's fall drop and need a 15-second video of a model power-walking down a city street showing off the full outfit. Write me a prompt I can paste into Higgsfield.",
+      "expected_output": "A production-grade Seedance 2.0 video prompt (~15-25 lines) for a streetwear lookbook. It opens with a 2-second hook (e.g. model power-walk straight at camera or outfit reveal), then has distinct labeled sections for environment/lighting, camera movement, and a second-by-second timeline, all framed to showcase the outfit and fabric in motion.",
+      "files": [],
+      "expectations": [
+        "Output references Seedance 2.0 (and/or Higgsfield) as the target video engine",
+        "Output contains an explicit 2-second opening hook describing what appears in the first 0-2 seconds",
+        "Output has clearly labeled camera, lighting/environment, and second-by-second timeline sections",
+        "Output centers a model and the outfit/garment, emphasizing movement or fabric motion rather than abstract product shots"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make my new dress collection look like a movie scene with dramatic lighting and a confident model on a runway. I want a video prompt for it.",
+      "expected_output": "A production-grade Seedance 2.0 fashion/runway prompt (~15-25 lines) that interprets the cinematic, dramatic-lighting request as a fashion lookbook rather than a generic film scene. It leads with a 2-second hook (e.g. dramatic reveal or runway descent), specifies dramatic lighting, camera moves, and a timeline, while keeping the model and dress collection as the subject.",
+      "files": [],
+      "expectations": [
+        "Output is structured as a fashion/runway showcase centered on the model and the dress collection, not a generic narrative film scene",
+        "Output specifies dramatic/editorial lighting as requested",
+        "Output includes a 2-second hook plus labeled camera and timeline sections",
+        "Output references Seedance 2.0 on Higgsfield as the generation engine"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Can you write me an OOTD reel prompt? Just my outfit of the day, head-to-toe, with a clean studio vibe and a slow spin so people can see all the angles.",
+      "expected_output": "A production-grade Seedance 2.0 prompt (~15-25 lines) for an OOTD outfit showcase. It opens with a 2-second hook (e.g. accessory close-up to full look or rotation reveal), specifies a clean studio environment and lighting, a rotating/spin camera move to show all angles, and a second-by-second timeline.",
+      "files": [],
+      "expectations": [
+        "Output is framed as an OOTD / outfit showcase focused on a single head-to-toe look",
+        "Output includes a 360-degree or partial rotation/spin camera movement to reveal all angles",
+        "Output specifies a clean studio environment and lighting setup",
+        "Output contains a 2-second hook and a second-by-second timeline section for a roughly 15-second clip"
+      ]
+    }
+  ]
+}

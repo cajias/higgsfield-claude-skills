@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-social-hook",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need a TikTok video about cleaning a pair of disgusting old sneakers until they look brand new. The first second has to stop people from scrolling. Make it 30 seconds.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield prompt, roughly 15-25 lines, built around a scroll-stopping first-2-seconds hook for a 30-second 9:16 vertical TikTok. It opens with a macro/extreme close-up shock of the grimy shoe, includes a frame-by-frame hook timeline (0.0-0.3s, 0.3-0.8s, etc.), on-screen text overlays, ASMR/sound cues, and a full-video continuation plus caption and hashtag suggestions.",
+      "files": [],
+      "expectations": [
+        "Output is a Seedance 2.0 on Higgsfield prompt explicitly engineered around the first 2 seconds as a scroll-stopping hook.",
+        "Output includes a sub-second hook timeline with timestamps (e.g. 0.0-0.3s, 0.3-0.8s, 1.5-2.0s) describing cuts and on-screen text.",
+        "Output specifies 9:16 vertical format and TikTok-oriented sound/audio plus caption and hashtag strategy.",
+        "Output is approximately 15-25 lines and targets a 30-second short-form video rather than a long-form or cinematic film."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Help me make something that actually gets views on Instagram Reels. It's a glow-up transformation reveal and I want people to stop mid-scroll the instant it starts.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield prompt of roughly 15-25 lines optimized for Instagram Reels save/share rate. It engineers the first 2 seconds as an attention-grabbing hook (pattern interrupt, before/after tease, or shocking after-shot), lays out a hook timeline with camera, lighting, and sound design, then expands into the full Reel with aesthetic polish, on-screen text timing, caption, and hashtag recommendations.",
+      "files": [],
+      "expectations": [
+        "Output is a Seedance 2.0 on Higgsfield prompt whose core design is a 2-second scroll-stopping hook for Instagram Reels.",
+        "Output contains a timestamped hook timeline plus camera, lighting, and sound/audio sections.",
+        "Output references short-form / Reels optimization (9:16 vertical, save/share or completion-rate goal) and includes caption and hashtag suggestions.",
+        "Output runs about 15-25 lines and frames the piece as social-media short-form content, not an ecommerce product ad or brand-story film."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I want a viral YouTube Shorts hook where it looks like someone is walking on the ceiling and viewers go 'how is that possible'. Make the opening unmissable.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield prompt of roughly 15-25 lines for a YouTube Shorts impossible-visual hook. It nails the first 2 seconds with a pattern-interrupt/impossible-physics reveal, gives a frame-by-frame hook timeline (with the first frame as a thumbnail-worthy moment), specifies camera, lighting, and sound cues plus on-screen text like 'HOW???', then continues into the full Short with a suggested title containing searchable keywords.",
+      "files": [],
+      "expectations": [
+        "Output is a Seedance 2.0 on Higgsfield prompt centered on a 2-second unmissable hook engineered to make viewers ask how it is possible.",
+        "Output includes a timestamped hook timeline and dedicated camera, lighting, and sound/audio cues.",
+        "Output is optimized for YouTube Shorts specifically (9:16 vertical, thumbnail-worthy first frame, and a searchable-keyword title suggestion).",
+        "Output is approximately 15-25 lines and is a scroll-stopping short-form social hook rather than a fight-scene or music-video prompt."
+      ]
+    }
+  ]
+}

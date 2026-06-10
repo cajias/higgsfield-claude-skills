@@ -1,0 +1,41 @@
+{
+  "skill_name": "ugc-video-auto",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need a full UGC ad for my new skincare serum on Higgsfield: make a young woman holding the bottle in a bright bathroom, then turn that into a short talking-style ad clip. Run the whole thing end to end.",
+      "expected_output": "Claude runs the complete two-phase pipeline through the higgsfield-mcp (higgsfield) MCP server: Phase 1 submits generate_image for the character, polls get_generation_status until it returns the full-quality image URL; Phase 2 feeds that URL into generate_video_seedance, polls the video job status, and returns the final UGC video output URL. It notes HF_API_KEY/HF_SECRET are required and that credits are consumed.",
+      "files": [],
+      "expectations": [
+        "Performs both stages: image generation followed by Seedance video animation, not just one of them",
+        "Uses the higgsfield-mcp (higgsfield) MCP tools, chaining the Phase 1 full-quality image URL into the generate_video_seedance call",
+        "Polls generation status for each async job and returns the final video output URL",
+        "Mentions that HF_API_KEY/HF_SECRET are needed and that credits will be consumed"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a UGC ad video for my energy drink brand from scratch on Higgsfield — generate the influencer character image and animate it into a 5-second clip.",
+      "expected_output": "Claude orchestrates the full UGC pipeline via higgsfield-mcp: it submits generate_image to create the influencer character, polls get_generation_status for the image URL, then submits generate_video_seedance with that URL to produce the clip, polling until the video job completes and returning the output URL. It surfaces the HF_API_KEY/HF_SECRET requirement and credit usage.",
+      "files": [],
+      "expectations": [
+        "Generates the character image first, then animates it into video as one combined end-to-end flow",
+        "Submits generate_image and generate_video_seedance jobs via the higgsfield MCP server and polls each for completion",
+        "Passes the generated image URL from the image phase as the input to the video phase",
+        "Returns a finished video output URL rather than only a text prompt or only a still image"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Here's a character image I already generated on Higgsfield (https://cdn.higgsfield.ai/img/abc123.png). Turn this into a UGC ad video.",
+      "expected_output": "Because the image already exists, Claude enters the pipeline at the video phase: it submits generate_video_seedance with the provided Higgsfield image URL through the higgsfield-mcp server, polls the video job status until it finishes, and returns the final UGC video output URL, noting HF_API_KEY/HF_SECRET and credit consumption.",
+      "files": [],
+      "expectations": [
+        "Recognizes the image stage is already done and proceeds with the Seedance video animation phase",
+        "Calls generate_video_seedance with the supplied Higgsfield image URL via the higgsfield MCP server and polls status for the output URL",
+        "Frames the result as a UGC ad video produced by the pipeline, not as a fresh standalone video unrelated to UGC",
+        "Notes HF_API_KEY/HF_SECRET are required and that credits are consumed"
+      ]
+    }
+  ]
+}

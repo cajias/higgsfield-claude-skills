@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-fight-scenes",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want a video of two sword fighters dueling on a rain-soaked rooftop at night, blades clashing with sparks flying. Make it intense.",
+      "expected_output": "A production-grade Seedance 2.0 prompt (roughly 15-25 lines) for the rooftop sword duel, opening with a 2-second hook beat, and including distinct camera, lighting, and beat-by-beat timeline sections that capture the clashing blades, sparks, weapon weight, and rain interaction.",
+      "files": [],
+      "expectations": [
+        "The output opens with a 2-second hook beat that establishes the duel before the first clash",
+        "The output contains clearly labeled camera, lighting, and timeline (beat-by-beat) sections",
+        "The output describes weapon-on-weapon impact such as clashing blades, sparks, or follow-through weight",
+        "The output is formatted as a single Seedance 2.0 / Higgsfield video prompt of roughly 15-25 lines, not a list of options or questions"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make an epic battle scene where a lone warrior takes on a group of armored soldiers in a courtyard, lots of impactful hits and dust kicking up.",
+      "expected_output": "A production-grade Seedance 2.0 prompt (roughly 15-25 lines) for the one-versus-many courtyard battle, starting with a 2-second hook, with camera, lighting, and timeline sections choreographing multi-combatant spacing, impact flashes, and dust/debris interaction.",
+      "files": [],
+      "expectations": [
+        "The output begins with a 2-second hook beat that drops the viewer into the action immediately",
+        "The output choreographs multiple combatants with attention to spacing, timing, or sequential strikes",
+        "The output includes a beat-by-beat timeline plus dedicated camera and lighting direction (such as impact flashes or dust and debris)",
+        "The output is a self-contained Seedance 2.0 video prompt of roughly 15-25 lines rather than a clarifying question or summary"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a hand-to-hand brawl in a dimly lit warehouse, two fighters trading fast punches and kicks, gritty and realistic with handheld camera energy.",
+      "expected_output": "A production-grade live-action Seedance 2.0 prompt (roughly 15-25 lines) for the gritty warehouse hand-to-hand brawl, led by a 2-second hook, with camera, lighting, and timeline sections covering the punch/kick exchange, realistic momentum, and handheld framing — distinctly realistic combat rather than anime or generic cinematic styling.",
+      "files": [],
+      "expectations": [
+        "The output starts with a 2-second hook beat that lands the viewer mid-tension before the first strike",
+        "The output describes realistic hand-to-hand combat (punches, kicks, momentum) rather than anime, stylized, or non-combat content",
+        "The output specifies handheld or dynamic camera movement plus dim/gritty lighting in dedicated camera and lighting sections",
+        "The output is a single Seedance 2.0 video prompt of roughly 15-25 lines including a beat-by-beat action timeline"
+      ]
+    }
+  ]
+}

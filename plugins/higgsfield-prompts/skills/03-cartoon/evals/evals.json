@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-cartoon",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want a short clip of a goofy mascot character bouncing across the screen with that classic Saturday-morning rubber-hose look, bright flat colors and bold black outlines.",
+      "expected_output": "A production-grade Seedance 2.0 video prompt in a 2D rubber-hose cartoon style, roughly 15-25 lines, opening with a 2-second hook and including labeled camera, lighting, color/style, and timeline sections describing flat colors, bold outlines, and bouncy exaggerated motion.",
+      "files": [],
+      "expectations": [
+        "Output is a single Seedance 2.0 video prompt of roughly 15-25 lines, not a conversation or clarifying questions",
+        "Prompt opens with an explicit 2-second hook describing the opening 48-60 frames (e.g. a smash-zoom, rubber-hose stretch entrance, or color explosion)",
+        "Prompt describes a 2D / hand-drawn / rubber-hose cartoon aesthetic with flat colors and bold outlines, NOT a photorealistic 3D render, anime, or live-action film look",
+        "Prompt contains labeled structural sections for camera, lighting, and a beat-by-beat timeline with frame or second timing"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make it look animated and fun - just a colorful illustrated style, nothing realistic. A cat knocking a cup off a table.",
+      "expected_output": "A production-grade Seedance 2.0 video prompt translating the vague 'make it animated / colorful illustrated' request into a cel-shaded or flat-illustrated 2D cartoon prompt, roughly 15-25 lines, with a 2-second hook plus camera, lighting, color palette, and timeline sections covering the cat knocking the cup off the table.",
+      "files": [],
+      "expectations": [
+        "Output is a complete Seedance 2.0 prompt (15-25 lines) rather than asking the user to clarify what 'animated' means",
+        "Prompt commits to a 2D illustrated / cel-shaded / flat cartoon style with a vibrant color palette, explicitly avoiding photorealism",
+        "Prompt opens with a 2-second hook in the first ~48-60 frames before the main cat-and-cup action",
+        "Prompt includes labeled camera, lighting, and timeline (beat/frame timing) sections covering the cat knocking the cup off the table"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Give me a retro cartoon-network style intro of a superhero kid striking a pose, exaggerated squash-and-stretch, thick outlines and a limited flat palette like a 90s TV cartoon.",
+      "expected_output": "A production-grade Seedance 2.0 video prompt in a retro 90s flat-cartoon / cel-animation style, roughly 15-25 lines, leading with a 2-second hook and including camera, lighting, limited-palette color/style, and a squash-and-stretch timeline for the superhero kid's pose.",
+      "files": [],
+      "expectations": [
+        "Prompt specifies a retro 2D cel / flat-cartoon TV aesthetic with thick outlines and a limited flat color palette, NOT Japanese anime, 3D CGI, or cinematic film",
+        "Prompt opens with a distinct 2-second hook before the hero pose beat",
+        "Prompt describes exaggerated squash-and-stretch / classic cartoon motion principles in the action or timeline section",
+        "Prompt is structured with labeled camera, lighting, and timeline sections and runs roughly 15-25 lines"
+      ]
+    }
+  ]
+}

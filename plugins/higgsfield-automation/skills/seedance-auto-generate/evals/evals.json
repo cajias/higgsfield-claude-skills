@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-auto-generate",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here's a product photo: https://example.com/sneaker.jpg. Animate it into a short clip on Higgsfield where the camera slowly orbits around the shoe.",
+      "expected_output": "Claude uses the higgsfield-mcp server to animate the supplied image into a Seedance video. It loads the deferred MCP tools (ToolSearch for higgsfield), confirms HF_API_KEY/HF_SECRET are set (optionally via debug_credentials), submits the image URL plus a motion prompt to the generate_video_seedance tool, polls get_request_status until the asynchronous job completes, and returns the finished video URL. It does NOT generate a new image first and does NOT use browser automation.",
+      "files": [],
+      "expectations": [
+        "Calls the higgsfield-mcp video generation tool (generate_video_seedance) with the provided image URL and a motion prompt rather than generating a new still image",
+        "Polls request status until the job finishes and returns a finished video output URL",
+        "References the HF_API_KEY/HF_SECRET requirement and that the job consumes credits",
+        "Does not invoke browser automation or open the Higgsfield web UI"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have this character render at https://cdn.mysite.com/avatar.png. Turn it into a 5-second AI video on higgsfield with her hair blowing in the wind.",
+      "expected_output": "Claude treats this as a single image-to-video Seedance job on Higgsfield, not the full image-generation-then-video UGC pipeline. It ensures the higgsfield-mcp tools are loaded, verifies credentials are present, submits the public image URL with the movement prompt to generate_video_seedance, polls get_request_status for the async job, and returns the resulting video URL.",
+      "files": [],
+      "expectations": [
+        "Submits the already-provided image URL directly to the Seedance video generation tool instead of first generating a character image",
+        "Passes a movement/action prompt (hair blowing) describing how the still should animate",
+        "Polls the asynchronous job status and returns the completed video URL via higgsfield-mcp",
+        "Mentions that credentials (HF_API_KEY/HF_SECRET) are required and credits are consumed"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Generate a seedance video from https://images.test/landscape.jpg on higgsfield — make the clouds drift across the sky.",
+      "expected_output": "Claude recognizes this as a Seedance image-to-video generation request and drives the higgsfield-mcp server. It loads the deferred tools (e.g. ToolSearch select:generate_video_seedance,get_request_status), confirms HF_API_KEY/HF_SECRET, submits the image URL plus the 'clouds drift' motion prompt to generate_video_seedance, polls get_request_status until done, and returns the finished video URL. It selects this video skill rather than the image-only generation skill.",
+      "files": [],
+      "expectations": [
+        "Selects the Seedance image-to-video flow and calls generate_video_seedance, not an image-generation tool like generate_image or Soul/Seedream",
+        "Uses the supplied HTTPS image URL as the source frame and the prompt as the animation/motion instruction",
+        "Follows the submit -> poll get_request_status -> return output URL flow against the higgsfield-mcp server",
+        "Notes the HF_API_KEY/HF_SECRET requirement and that generation consumes credits"
+      ]
+    }
+  ]
+}

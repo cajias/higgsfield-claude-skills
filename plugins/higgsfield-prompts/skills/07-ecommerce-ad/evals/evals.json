@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-ecommerce-ad",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm launching a new matte lipstick line on my Shopify store. Can you write me a 15-second TikTok ad that stops people from scrolling and makes them want to buy?",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield video prompt for a beauty/cosmetics e-commerce ad. It opens with a specific 2-second scroll-stopping hook (e.g. satisfying texture close-up or color/variant cascade), then a labeled timeline (0-2s hook, showcase, benefit, CTA) totaling 15 seconds, with explicit camera movement, lighting, and a 9:16 vertical aspect ratio for TikTok. Roughly 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "References Seedance 2.0 on Higgsfield as the generation model",
+        "Specifies a concrete 2-second hook in the opening of the prompt",
+        "Includes a labeled shot timeline with seconds (e.g. 0-2s, 2-X) summing to roughly 15 seconds",
+        "Calls out camera movement, lighting, and a vertical 9:16 aspect ratio suited to TikTok"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make a punchy product promo video for the wireless earbuds I sell on Amazon. I want a dramatic reveal and something that screams premium tech.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield prompt for a tech/electronics product ad. It leads with a dramatic product-drop or unboxing-reveal 2-second hook, has distinct sections for camera, lighting, and a beat-by-beat timeline that ends on a money shot plus CTA, optimized for Amazon listing playback. Around 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Opens with a 2-second dramatic-reveal hook for the earbuds before any other action",
+        "Contains separate camera-movement and lighting descriptions (e.g. dramatic/premium lighting)",
+        "Includes a structured timeline of shots leading to an isolated product money shot and a call-to-action",
+        "Names Seedance 2.0 on Higgsfield and a platform-appropriate aspect ratio"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I run a dropshipping store selling a portable blender. Write me a high-converting promo video prompt I can post on Instagram to drive sales.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield prompt for a dropshipping/e-commerce product ad showcasing the portable blender in use. It chooses an appropriate 2-second hook (e.g. in-hand usage tease or problem-solution snap), follows the hook -> showcase -> benefit -> CTA structure with timestamped beats, and specifies camera, lighting, and an Instagram-friendly aspect ratio. Roughly 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Frames the output as a sales-driven e-commerce/dropshipping ad rather than a pure 360 turntable or fashion model walk",
+        "Begins with a defined 2-second hook demonstrating the product in use or a problem-solution moment",
+        "Lays out a hook-to-CTA timeline with explicit timestamps and an ending call-to-action",
+        "Specifies Seedance 2.0 on Higgsfield, camera movement, lighting, and an Instagram-suited aspect ratio (9:16 or 1:1)"
+      ]
+    }
+  ]
+}

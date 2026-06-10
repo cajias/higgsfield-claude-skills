@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-cinematic",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a shot of a detective walking through a rain-soaked alley at night. Turn it into a prompt that makes it look like a movie scene with dramatic moody lighting and shallow depth of field.",
+      "expected_output": "A production-grade Seedance 2.0 video prompt (~15-25 lines) for the rainy-alley detective scene, opening with a 2-second hook and including distinct camera, lighting, and timeline/beat sections with cinematic film-style language (anamorphic feel, shallow depth of field, moody key/fill lighting, letterbox/film grain).",
+      "files": [],
+      "expectations": [
+        "Output is a single Seedance 2.0 prompt formatted with labeled sections such as camera/movement, lighting, and a timed beat-by-beat timeline rather than prose.",
+        "Opens with an explicit 2-second hook beat described at the start of the timeline.",
+        "Uses cinematic film vocabulary (e.g. shallow depth of field, anamorphic, dramatic/moody key lighting, film grain or letterbox) consistent with the cinematic style and NOT social/viral or fashion-lookbook framing.",
+        "Specifies a defined camera move (dolly, Steadicam, crane, push-in, or tracking) tied to the alley scene."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want an epic wide establishing shot of a lone astronaut on a red desert planet at golden hour, with lens flare and a slow crane reveal. It should feel like a Hollywood blockbuster.",
+      "expected_output": "A ~15-25 line Seedance 2.0 prompt for the astronaut-on-a-desert-planet shot, leading with a 2-second hook, with explicit camera (slow crane reveal), lighting (golden hour, lens flare), and a sequential beat timeline, all in blockbuster film-quality cinematic language.",
+      "files": [],
+      "expectations": [
+        "Includes a crane/reveal camera movement and lens flare as called out in the request.",
+        "Contains an explicit 2-second hook as the first timeline beat followed by additional timed beats.",
+        "Has clearly separated camera, lighting, and timeline sections totaling roughly 15-25 lines.",
+        "Frames the look as epic/blockbuster cinematic (e.g. golden hour, anamorphic, widescreen) rather than 3D/CGI render or anime styling."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Take this footage of two people talking across a diner table and give it a tense noir film look — high contrast black-and-white, hard shadows, slow push-in on the woman's face.",
+      "expected_output": "A ~15-25 line Seedance 2.0 prompt for the diner conversation rendered in tense noir style, opening with a 2-second hook and breaking out camera (slow push-in), lighting (high-contrast black-and-white, hard chiaroscuro shadows), and a beat-by-beat timeline.",
+      "files": [],
+      "expectations": [
+        "Describes a noir aesthetic: high-contrast black-and-white, hard/chiaroscuro shadows, dramatic low-key lighting.",
+        "Specifies a slow push-in on the woman's face as the primary camera move.",
+        "Begins with a 2-second hook beat and continues with a timed cinematic timeline.",
+        "Reads as a cinematic film-look prompt (noir, film grain, letterbox) and not a music-video beat-sync or e-commerce product framing."
+      ]
+    }
+  ]
+}

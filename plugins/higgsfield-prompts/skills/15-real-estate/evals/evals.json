@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-real-estate",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just listed a 4-bedroom modern home with floor-to-ceiling windows and an open kitchen. Make me a listing video that walks buyers through the place and makes it feel like somewhere they'd love to live.",
+      "expected_output": "A production-grade Seedance 2.0 property-showcase prompt: opens with a 2-second hook that stops the scroll, then flows the camera through the home as a continuous gimbal/Steadicam walkthrough, with dedicated camera, natural-light/lighting, and beat-by-beat timeline sections covering the entry, living space, and open kitchen. Roughly 15-25 lines, ready to paste into Higgsfield.",
+      "files": [],
+      "expectations": [
+        "Output is a single Seedance 2.0 video prompt framed as a real estate listing / property walkthrough, emphasizing the home's space, light, and aspirational living feel rather than a generic film scene.",
+        "Prompt opens with an explicit ~2-second hook designed to stop a scrolling buyer before the walkthrough begins.",
+        "Prompt includes a continuous walkthrough camera move (gimbal / Steadicam flow) plus dedicated natural-light or lighting direction.",
+        "Prompt is structured with distinct camera, lighting, and beat-by-beat timeline sections totaling roughly 15-25 lines."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make a video showcasing the interior design of a freshly staged luxury apartment — warm wood floors, marble countertops, and soft afternoon light coming through the windows. I want it to feel high-end and editorial.",
+      "expected_output": "A polished Seedance 2.0 interior-design / home-staging prompt that leads with a 2-second hook, then specifies the warm afternoon natural-light setup, authentic material rendering (wood grain, marble, soft textiles), a smooth interior reveal camera move, and a timed sequence of beats moving across the staged rooms. Around 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Prompt is written as an interior-design / home-staging showcase for a luxury apartment, foregrounding material authenticity (wood floors, marble countertops) and a high-end editorial tone.",
+        "Prompt begins with a ~2-second hook establishing the staged interior before the camera reveal.",
+        "Prompt specifies warm afternoon / soft natural lighting and authentic material rendering as dedicated sections.",
+        "Prompt provides a beat-by-beat timeline and runs roughly 15-25 lines with separate camera and lighting direction."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "We're marketing a brand-new glass office tower downtown. I want a dramatic aerial reveal of the building at golden hour, then sweep in toward the entrance — something that screams premium architecture.",
+      "expected_output": "A Seedance 2.0 architecture-showcase prompt for a commercial building: opens with a 2-second hook on the tower, then choreographs a drone aerial reveal at golden hour that descends and sweeps toward the entrance, with dedicated camera, golden-hour lighting, and material (glass/steel reflections) sections plus a timed reveal timeline. About 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Prompt is framed as an architecture / property-marketing showcase of a commercial glass office tower, not a character-driven cinematic story or a product turntable.",
+        "Prompt opens with a ~2-second hook on the building before the aerial reveal begins.",
+        "Prompt specifies a drone aerial reveal sweeping toward the entrance as a dedicated camera move, with golden-hour lighting and glass/steel material reflections called out.",
+        "Prompt is structured with separate camera, lighting, and beat-by-beat timeline sections totaling roughly 15-25 lines."
+      ]
+    }
+  ]
+}
