@@ -1,0 +1,41 @@
+{
+  "skill_name": "ugc-hot-girl",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm shooting a TikTok ad for my new vitamin gummies. Can you come up with a hot girl character I can use as the spokesperson?",
+      "expected_output": "A detailed, paste-ready Higgsfield Soul image prompt describing an attractive young female UGC spokesperson, with concrete layers for subject/features, expression, clothing, lighting, camera framing, background, and photorealistic quality tags. Notes that the prompt can be rendered via the higgsfield-image-auto skill.",
+      "files": [],
+      "expectations": [
+        "Output is a written image-generation prompt for an attractive female character, not an API call or a submitted generation job",
+        "The prompt describes a UGC/testimonial-style female spokesperson with camera-aware, talking-head energy (e.g. mid-conversation expression, looking at camera)",
+        "The prompt includes photorealistic/authenticity quality cues (e.g. natural skin texture, golden hour or ring light, shot on iPhone/Sony) rather than overly polished AI-looking terms",
+        "It mentions that the generated prompt can be rendered via the higgsfield-image-auto skill"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write me an image prompt for a female influencer to use in product testimonial ad creatives. Make her look like a real person you'd see on Instagram, not AI.",
+      "expected_output": "A production-grade Higgsfield Soul image prompt for a naturally attractive female influencer optimized for testimonial UGC, emphasizing authenticity (realistic skin, natural styling) and ad-ready expression, structured across the prompt's standard layers.",
+      "files": [],
+      "expectations": [
+        "Output is a textual image prompt describing a single attractive female influencer character for ad/UGC content",
+        "The prompt prioritizes authentic, real-person look (natural skin texture, casual styling) and avoids terms like flawless/8K/hyperrealistic",
+        "The prompt covers expression, clothing, lighting, and camera framing tailored to product testimonial UGC",
+        "No actual image is generated and no Higgsfield API/generate_image call is made; the response is only the prompt text"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I need a relatable young woman to front a skincare brand's UGC videos. Describe her in enough detail that I can generate a consistent character image.",
+      "expected_output": "A detailed beauty/skincare-variant image prompt for an attractive young female UGC creator with specific, repeatable features (hair color/length/style, skin, age range) so the character stays consistent, plus guidance that it can be rendered via higgsfield-image-auto and optionally registered as a Higgsfield character for face consistency.",
+      "files": [],
+      "expectations": [
+        "Output is a detailed female UGC character image prompt, not an automation/video-generation action",
+        "The prompt specifies concrete, repeatable identity features (hair color, length, texture, skin, age) to keep the character consistent across generations",
+        "Styling and lighting are tuned toward a skincare/beauty UGC look (e.g. dewy skin, ring light, fresh-faced)",
+        "It references handing the prompt to higgsfield-image-auto to render, and/or registering a Higgsfield character_id for consistent faces"
+      ]
+    }
+  ]
+}

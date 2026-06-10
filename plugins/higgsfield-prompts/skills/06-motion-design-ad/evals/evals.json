@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-motion-design-ad",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're launching our project-management SaaS next month and need a 15-second promo video that shows off the dashboard and the new automation feature. Can you write the video prompt for it?",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield video prompt for a SaaS product launch, opening with a 2-second attention hook, including dedicated camera, lighting, and timeline sections that animate the dashboard UI and the automation feature, roughly 15-25 lines long.",
+      "files": [],
+      "expectations": [
+        "References Seedance 2.0 on Higgsfield as the target generation model",
+        "Specifies a hook that lands within the first 2 seconds",
+        "Includes distinct camera, lighting, and timeline (beat-by-beat) sections",
+        "Frames the content as a software/SaaS product ad showcasing UI and a feature rather than a physical product or brand origin story"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make a video for my app. It's a budgeting app and I want something with clean animated graphics that feels modern and techy for the App Store listing.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield motion design prompt for an app promo, opening with a 2-second hook, with structured camera, lighting, and timeline sections describing animated UI/motion graphics in a clean modern tech aesthetic, around 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Describes motion-design / animated graphics treatment rather than live-action product footage",
+        "Opens with a hook in the first 2 seconds to stop the scroll",
+        "Contains explicit camera, lighting, and a timed sequence/timeline breakdown",
+        "Positions the output as a tech/app promo, distinguishing it from a generic e-commerce product ad"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I run a developer-tools startup and need a slick feature-showcase commercial for our new AI code-review tool to run on YouTube and LinkedIn.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield prompt for a tech/startup feature-showcase commercial, with a 2-second hook, camera, lighting, and timeline sections that walk through the AI code-review feature in a motion-design style suited to YouTube/LinkedIn, approximately 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Targets Seedance 2.0 on Higgsfield with a tech-product/startup feature-showcase framing",
+        "Begins with a hook in the opening 2 seconds",
+        "Provides separate camera, lighting, and timeline sections in the prompt structure",
+        "Reads as a software/tech commercial highlighting a product feature, not a viral social hook or brand mission film"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main, master]
+  push:
+    branches: [main, master]
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Sync dependencies
+        run: uv sync --group dev
+      - name: Lint (ruff + mypy)
+        run: |
+          RUFF_CFG=$(uv run python -c "from lint_configs import get_ruff_config_path as g; print(g())")
+          uv run ruff check --config "$RUFF_CFG" tests/
+          uv run mypy tests/
+      - name: Format check (black)
+        run: uv run black --check tests/
+      - name: Structural tests
+        run: uv run python tests/validate_structure.py
+
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint markdown
+        run: npm run lint:md
+      - name: Format check
+        run: npm run format:check
+
+  plugin-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Validate marketplace + plugins (strict)
+        run: |
+          claude plugin validate . --strict
+          claude plugin validate ./plugins/higgsfield-prompts --strict
+          claude plugin validate ./plugins/higgsfield-automation --strict

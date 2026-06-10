@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+dist/
+*.egg-info/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# Workflow scratch
+.skill-eval-scratch/

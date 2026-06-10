@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-food-beverage",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I run a downtown burger joint and want a short video for Instagram that makes our double cheeseburger look absolutely mouthwatering. Can you write me a video prompt that opens on a slow-motion cheese pull?",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield video prompt for the cheeseburger, roughly 15-25 lines, opening with a 2-second hook on the slow-motion cheese pull/stretch and including camera, lighting, and timeline sections tuned for appetite appeal.",
+      "files": [],
+      "expectations": [
+        "The prompt explicitly references Seedance 2.0 on Higgsfield as the target model.",
+        "The opening describes a 2-second hook built around a slow-motion cheese pull/stretch on the burger.",
+        "It contains distinct camera, lighting, and timeline (or shot-by-shot beat) sections.",
+        "It uses food-specific appetite-appeal language such as glistening sauce, melted cheese, steam, or macro texture rather than generic product-ad copy."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make a satisfying ASMR-style clip of pouring thick caramel sauce over a stack of pancakes, with the syrup slowly cascading down the sides. I want every drip to look irresistible.",
+      "expected_output": "A Seedance 2.0 on Higgsfield prompt of about 15-25 lines opening on a 2-second slow-motion sauce-pour hook, with macro camera moves, backlit/golden lighting to make the caramel shine, and a timeline of the cascade and pooling for ASMR satisfaction.",
+      "files": [],
+      "expectations": [
+        "The prompt opens on a 2-second hook featuring the slow-motion caramel/syrup pour cascading over the pancakes.",
+        "It specifies camera work (macro / close-up / glide) and lighting (backlit or golden-hour) chosen to make the sauce glisten.",
+        "It includes a timeline or shot sequence covering the pour, cascade, and pooling moments.",
+        "It emphasizes ASMR-satisfying, appetite-triggering texture detail (drips, sheen, viscosity)."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Our craft brewery is launching a new IPA and I need a hero video that shows beer being poured into a chilled glass with bubbles rising and a foamy head forming. Help me write the prompt.",
+      "expected_output": "A Seedance 2.0 on Higgsfield beverage prompt of roughly 15-25 lines that opens on a 2-second hook of rising carbonation bubbles and foam head, with backlit lighting for luminosity, defined camera moves, and a timeline of the pour and foam settle.",
+      "files": [],
+      "expectations": [
+        "The prompt targets Seedance 2.0 on Higgsfield and is framed as a beverage/drink hero video.",
+        "The 2-second hook is built on bubbles rising and the foam head forming in the chilled glass.",
+        "It calls for backlit or luminous lighting plus specific camera framing and a timeline of the pour and settle.",
+        "It focuses on drink-specific cues (carbonation, condensation, foam, glass) distinguishing it from a generic product or fashion ad."
+      ]
+    }
+  ]
+}

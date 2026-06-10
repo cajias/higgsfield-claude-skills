@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-comic-to-video",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I drew a three-panel comic page where a detective kicks open a door, draws his gun, and confronts the villain in the rain. Turn this page into a moving video.",
+      "expected_output": "A production-grade Seedance 2.0 video prompt that animates the static comic page, opening with a 2-second hook, preserving the original line work and color palette, with explicit camera, lighting, and a beat-by-beat timeline that follows the panel reading order. Roughly 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Output references animating an existing static comic/illustration rather than generating a brand-new styled scene from scratch",
+        "Output opens with a 2-second hook beat at the start of the timeline",
+        "Output contains distinct camera, lighting, and a beat-by-beat timeline section spanning roughly 15-25 lines",
+        "Output infers motion across the panel sequence in reading order (e.g. kick, draw, confront) while preserving the original art style"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here's a vertical webtoon scroll of a girl confessing on a rooftop at sunset. Can you bring it to life as a short clip while keeping the original art style?",
+      "expected_output": "A production-grade Seedance 2.0 prompt that converts the vertical webtoon into an animated clip, honoring the top-to-bottom vertical scroll reading flow, opening with a 2-second hook, and including camera, lighting, and timeline sections while preserving the source illustration's style. Roughly 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Output respects the vertical webtoon scroll reading direction (top-to-bottom) when sequencing motion",
+        "Output explicitly preserves the original webtoon art style and color palette through the animation",
+        "Output begins with a 2-second hook and includes labeled camera, lighting, and timeline sections totaling roughly 15-25 lines",
+        "Output frames the task as animating the provided static art (illustrate-to-animate), not creating a new anime or cartoon concept"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I have a manga page of a samurai duel with a few panels and some speech bubbles. Make this drawing move and animate the page.",
+      "expected_output": "A production-grade Seedance 2.0 prompt that animates the static manga page, honoring right-to-left manga reading order, translating speech bubbles into voice/audio timing cues, opening with a 2-second hook, and including camera, lighting, and a beat-by-beat timeline. Roughly 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Output treats the manga page as source art to be animated and respects right-to-left manga reading order across panels",
+        "Output translates the speech bubbles into dialogue/voice timing or audio design cues",
+        "Output starts with a 2-second hook and contains separate camera, lighting, and timeline sections of roughly 15-25 lines",
+        "Output keeps the original manga line work and style intact rather than restyling it as generic anime or cartoon"
+      ]
+    }
+  ]
+}

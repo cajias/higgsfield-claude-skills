@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-music-video",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just finished a synthwave track and I want a video where the visuals snap to the beat and hit hard on the drop around the 30-second mark. Can you write me a prompt for it?",
+      "expected_output": "A production-grade Seedance 2.0 prompt (roughly 15-25 lines) for a beat-synced synthwave music video. It opens with a 2-second hook, includes labeled camera, lighting, and a beat-aligned timeline that calls out the drop, and references the uploaded audio track for synchronization.",
+      "files": [],
+      "expectations": [
+        "Output is a Seedance 2.0 prompt that explicitly synchronizes visual cuts or motion to the music's beat and the drop",
+        "Output contains a 2-second hook at the start and is structured with distinct camera, lighting, and timeline sections",
+        "Output references the song/audio track and beat timing (e.g. the 30-second drop) rather than describing a silent narrative scene",
+        "Output is approximately 15-25 lines of concrete, directable prompt text"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make a lyric video for my new indie pop single \"Paper Hearts\" where the words appear in time with the vocals and the mood shifts from soft and warm to bright on the chorus.",
+      "expected_output": "A production-grade Seedance 2.0 lyric video prompt (roughly 15-25 lines) that animates the lyrics in sync with the vocal phrasing. It begins with a 2-second hook, has labeled camera, lighting, and timeline sections, and describes the verse-to-chorus mood and lighting transition.",
+      "files": [],
+      "expectations": [
+        "Output is a Seedance 2.0 prompt describing lyrics/typography appearing in time with the vocals",
+        "Output opens with a 2-second hook and includes separate camera, lighting, and beat-aligned timeline sections",
+        "Output describes a mood and lighting transition from the verse to the chorus tied to the song structure",
+        "Output is roughly 15-25 lines and references the track by name for audio-visual sync rather than a generic cinematic story"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I need visuals for my hip-hop song — an artist performing on stage with concert lighting that pulses with the rhythm. Give me something I can generate.",
+      "expected_output": "A production-grade Seedance 2.0 performance/concert visual prompt (roughly 15-25 lines) showing the artist performing with stage lighting that pulses to the rhythm. It starts with a 2-second hook and includes labeled camera, lighting, and a rhythm-synced timeline that maps lighting hits to the beat.",
+      "files": [],
+      "expectations": [
+        "Output is a Seedance 2.0 prompt for a performance/concert visual with stage lighting pulsing to the song's rhythm",
+        "Output begins with a 2-second hook and is organized into camera, lighting, and timeline sections",
+        "Output maps lighting or motion beats to the music rhythm and references the uploaded track, distinguishing it from a generic product or brand video",
+        "Output is approximately 15-25 lines of concrete, generatable prompt text"
+      ]
+    }
+  ]
+}

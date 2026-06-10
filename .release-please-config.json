@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "simple",
+  "separate-pull-requests": false,
+  "group-pull-request-title-pattern": "chore: release ${version}",
+  "packages": {
+    "plugins/higgsfield-prompts": {
+      "release-type": "simple",
+      "package-name": "higgsfield-prompts",
+      "changelog-path": "CHANGELOG.md",
+      "extra-files": [{ "type": "json", "path": ".claude-plugin/plugin.json", "jsonpath": "$.version" }]
+    },
+    "plugins/higgsfield-automation": {
+      "release-type": "simple",
+      "package-name": "higgsfield-automation",
+      "changelog-path": "CHANGELOG.md",
+      "extra-files": [{ "type": "json", "path": ".claude-plugin/plugin.json", "jsonpath": "$.version" }]
+    }
+  },
+  "changelog-sections": [
+    { "type": "feat", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "perf", "section": "Performance Improvements" },
+    { "type": "docs", "section": "Documentation" },
+    { "type": "refactor", "section": "Code Refactoring" },
+    { "type": "test", "section": "Tests" },
+    { "type": "build", "section": "Build System" },
+    { "type": "ci", "section": "CI/CD" },
+    { "type": "chore", "section": "Miscellaneous" }
+  ]
+}

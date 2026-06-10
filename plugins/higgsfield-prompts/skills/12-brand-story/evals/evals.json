@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-brand-story",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a 3-person coffee roastery that started in a garage 8 years ago. I want a 60-second video that tells how we got started and what we believe in, so people feel something about who we are before they ever taste the coffee. Can you write me the video prompt for this?",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield brand story prompt structured as an origin-story narrative arc with a 2-second emotional opening hook, an establishing-world beat, an inciting incident, a montage of emergence, a transformation/closing reflection, and an understated brand signature. Includes camera, lighting, pacing, and audio/music direction plus authenticity cues, ending on emotion rather than a hard logo sell. Roughly 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Output is a Seedance 2.0 on Higgsfield video prompt that opens with a defined 2-second hook before any brand reveal",
+        "Prompt follows a narrative three-act arc (setup, conflict/incident, resolution) rather than a feature-focused product ad or 360 spin",
+        "Prompt specifies lighting, camera/pacing, and audio or music direction across a 15-25 line structure",
+        "Prompt prioritizes authentic founder/origin emotion and ends on emotional resonance with the logo or tagline kept understated"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our nonprofit is turning 10 and we want an emotional brand film for the gala that captures our mission and the communities we've changed, building to something inspiring. Write the generation prompt for it.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield brand film prompt using a manifesto/anthem or milestone narrative arc, opening with a 2-second hook, then building through community-centered beats to an inspirational crescendo and a values-made-visible closing. Specifies an inspirational/warm emotional register, lighting, pacing, voiceover/sound design, and authenticity flags. About 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Output is a brand-film video prompt centered on mission and community impact, not a single-product promo or social hook clip",
+        "Prompt opens with a 2-second hook and resolves on an inspirational crescendo with values shown through behavior, not stated as slogans",
+        "Prompt names a clear emotional register and includes lighting, pacing, and music/voiceover or sound-design direction",
+        "Prompt includes authenticity cues (real people, genuine emotion) and spans roughly 15-25 lines of timeline-structured direction"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I want our founder to tell the story of why she started the company and the problem she was obsessed with solving. Less of a product demo, more of an emotional about-us piece that makes viewers trust us. Give me the prompt to generate it.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield founder-story / about-us prompt using a problem-solution or origin arc, opening with a 2-second hook such as founder's hands or a provocative question, then moving through the genuine problem, the discovery, and a quiet earned resolution. Includes founder voiceover guidance, lighting, camera, pacing, and music direction with authenticity emphasis. Around 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Output is an about-us / founder-story video prompt focused on the company's why and trust-building, not a product demo or e-commerce ad",
+        "Prompt opens with a 2-second human hook and leads with the genuine problem before introducing any solution",
+        "Prompt specifies founder voiceover or dialogue handling alongside lighting, camera, and pacing details in a 15-25 line timeline",
+        "Prompt flags authenticity (real founder, genuine emotion, not performed) and ends on emotional resonance rather than a hard sell"
+      ]
+    }
+  ]
+}

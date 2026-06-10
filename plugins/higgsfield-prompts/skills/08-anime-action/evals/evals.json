@@ -1,0 +1,41 @@
+{
+  "skill_name": "seedance-anime-action",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want a video of a spiky-haired teenage warrior powering up before a duel, glowing aura, speed lines, the whole shonen battle vibe. Make it feel like a Japanese animation fight, not a Western cartoon.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield video prompt rendering a shonen-style power-up duel with authentic anime conventions (cel shading, glowing aura, speed lines, impact frames). It opens with a 2-second hook, then includes labeled camera, lighting, and second-by-second timeline sections, and reads roughly 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Explicitly invokes anime / Japanese animation aesthetic terminology (e.g., cel shading, shonen, impact frames, speed lines) rather than generic Western cartoon or live-action fight choreography",
+        "Begins with a distinct 2-second hook describing the opening attention-grabbing frame",
+        "Contains clearly labeled camera, lighting, and a time-coded/second-by-second timeline section",
+        "References Seedance 2.0 on Higgsfield and stays within roughly 15-25 lines"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Take this photo of my character and make it look like an anime: a magical girl twirling as cherry blossom petals swirl around her at sunset, soft sparkly transformation energy.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield video prompt for a magical-girl transformation sequence with sakura petals, sparkle particles, and warm sunset rim lighting in an authentic anime style. It starts with a 2-second hook and provides camera, lighting, and timeline breakdowns across roughly 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Describes magical-girl / sakura petal / transformation imagery using anime visual language (sparkle particles, rim lighting, cel-shaded look)",
+        "Opens with a 2-second hook before the detailed prompt body",
+        "Includes separate camera, lighting, and second-by-second timeline sections",
+        "Names Seedance 2.0 on Higgsfield and keeps the prompt to roughly 15-25 lines"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Make me a 30-second mecha opening sequence in the style of a classic Japanese animation intro: a giant robot launching from a hangar, dramatic poses, kanji titles flashing, that epic anime OP energy.",
+      "expected_output": "A production-grade Seedance 2.0 on Higgsfield video prompt for an anime opening (OP) sequence featuring a launching mecha, dynamic hero poses, and stylized title cards in authentic Japanese-animation style. It leads with a 2-second hook and breaks down camera, lighting, and a timed shot timeline across roughly 15-25 lines.",
+      "files": [],
+      "expectations": [
+        "Frames the output as an anime opening / mecha sequence using Japanese-animation terms (anime OP, mecha, dynamic posing, dramatic anime lighting) rather than a generic cinematic or motion-graphics ad treatment",
+        "Starts with a 2-second hook that establishes the opening frame",
+        "Provides labeled camera, lighting, and second-by-second timeline sections covering the duration",
+        "References Seedance 2.0 on Higgsfield and remains roughly 15-25 lines long"
+      ]
+    }
+  ]
+}

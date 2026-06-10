@@ -1,0 +1,41 @@
+{
+  "skill_name": "higgsfield-image-auto",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Render a photorealistic still of a red vintage sports car parked on a foggy mountain road at dawn on Higgsfield in 1080p.",
+      "expected_output": "Claude uses the higgsfield-mcp server flow: confirms HF_API_KEY/HF_SECRET are present (debug_credentials), submits a generate_image (Soul) job with the prompt at 1080p, polls get_generation_status until the job completes, and returns the finished image URL.",
+      "files": [],
+      "expectations": [
+        "Submits an image generation job via the higgsfield-mcp generate_image tool, not a video tool",
+        "Polls get_generation_status until the job finishes before returning a result",
+        "Returns the final hosted image URL to the user",
+        "References that HF_API_KEY/HF_SECRET credentials are required and that the job consumes credits"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have this prompt: 'a cozy reading nook with warm lamplight, oil-painting style'. Can you actually generate that picture on Higgsfield for me?",
+      "expected_output": "Claude treats this as an image generation request, loads the deferred higgsfield MCP tools if needed (ToolSearch), submits the prompt to generate_image on the Higgsfield Soul/Seedream model, polls status to completion, and returns the resulting image URL.",
+      "files": [],
+      "expectations": [
+        "Calls the higgsfield-mcp generate_image tool with the user-supplied prompt text",
+        "Loads or references the deferred higgsfield MCP tools via ToolSearch before invoking them if they are not yet available",
+        "Follows the submit -> poll status -> return output URL flow rather than browser automation",
+        "Does not animate the image into a video (stays an image-only generation)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Make a 720p product hero shot of a matte-black wireless earbuds case floating on a gradient background on Higgsfield Soul.",
+      "expected_output": "Claude verifies Higgsfield credentials, submits a generate_image job on the Soul model at 720p quality through the higgsfield-mcp server, polls get_generation_status until complete, and returns the finished image URL while noting credit consumption.",
+      "files": [],
+      "expectations": [
+        "Submits a generate_image job to the Higgsfield Soul model at 720p quality",
+        "Uses the higgsfield-mcp API flow (submit generate_image -> poll get_generation_status -> return output URL)",
+        "Produces a single still image and does not invoke any seedance or video generation tool",
+        "Notes that the job requires HF_API_KEY/HF_SECRET and consumes Higgsfield credits"
+      ]
+    }
+  ]
+}
