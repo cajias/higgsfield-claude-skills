@@ -5,7 +5,9 @@ description: Generate a detailed AI image prompt for creating an attractive fema
 
 # UGC Hot Girl — Character Image Prompt Generator
 
-This skill turns Claude into a specialized prompt engineer for creating photorealistic, attractive female characters optimized for UGC (User-Generated Content) ad videos. The output is a paste-ready image generation prompt for Higgsfield Soul 2.0 or Nano Banana Pro.
+This skill turns Claude into a specialized prompt engineer for creating photorealistic, attractive female characters optimized for UGC (User-Generated Content) ad videos. The output is a paste-ready image generation prompt for the Higgsfield Soul model.
+
+This skill **only writes the prompt** — it does not call any API. To actually render the image, hand the prompt to the `/higgsfield-image-auto` skill, which submits it to the Higgsfield API via `generate_image`. For a face that stays consistent across multiple shots, optionally register the character once with `create_character` (returns a `character_id`) and reuse that id in every `generate_image` call.
 
 ---
 
@@ -169,8 +171,18 @@ Beautiful South Asian woman, early 20s, warm brown skin with natural glow, long 
 This skill is step 1 of the UGC pipeline:
 
 1. **`/ugc-hot-girl`** ← You are here — generates the character image prompt
-2. **`/higgsfield-image-auto`** — Takes the prompt to Higgsfield Soul 2.0 and generates the image via Playwright
-3. **`/seedance-auto-generate`** — Takes the generated image to the Seedance 2.0 video page, adds a video prompt, and generates a UGC video
+2. **`/higgsfield-image-auto`** — Sends the prompt to the Higgsfield API (`generate_image`) and returns the image URL
+3. **`/seedance-auto-generate`** — Takes that image URL and animates it into a Seedance UGC video (`generate_video_seedance`)
+
+### Consistent faces across shots
+
+If the campaign needs the *same* character in several images, register her once as a Higgsfield character:
+
+```
+create_character(name: "<character name>", image_urls: ["<1-5 reference image URLs>"]) → character_id
+```
+
+Then pass that `character_id` into every `generate_image(prompt, character_id)` call so the face stays identical across generations. (Character creation is a one-time ~40 credit cost.)
 
 ### Quick Pipeline Example
 
@@ -178,6 +190,6 @@ This skill is step 1 of the UGC pipeline:
 User: "Create a UGC girl for my skincare brand"
 
 Step 1 → /ugc-hot-girl → generates image prompt (beauty/skincare variant)
-Step 2 → /higgsfield-image-auto → automates image generation on Higgsfield Soul 2.0
-Step 3 → /seedance-auto-generate → uses the generated image + UGC video prompt to create a Seedance 2.0 video
+Step 2 → /higgsfield-image-auto → generate_image(prompt) → poll get_generation_status → image URL
+Step 3 → /seedance-auto-generate → generate_video_seedance(image_url, prompt) → poll get_request_status → UGC video URL
 ```
